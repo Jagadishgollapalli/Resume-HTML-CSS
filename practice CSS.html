@@ -1,0 +1,633 @@
+
+//1.Math equation...
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+</style>
+<body>
+    <span>&#8706;<sup>2</sup>u/&#8706;t<sup>2</sup>= c<sup>2</sup> &#8706;<sup>2</sup>u/&#8706t<sup>2</sup></span>
+</body>
+</html>
+_________________________________________________________________
+//2)CSS rule of rounded rectangle....
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    img{
+        width: 50%;
+        height: 500px;
+        border-radius: 50px;
+        border-style: dotted;
+        filter: grayscale(1);
+    }
+</style>
+<body>
+    <img src="rock.jpg" alt="rock">
+</body>
+</html>
+
+________________________________________________
+4)Different types of cursors....
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.a{
+    cursor: not-allowed;
+}
+.b{
+    cursor: col-resize;
+}
+.c{
+    cursor: crosshair; 
+}
+.d{
+    cursor: grab;
+}
+.e{
+    cursor: move;
+}
+.f{
+    cursor: pointer; 
+}
+.g{
+    cursor: progress;
+}
+.h{
+    cursor: text; 
+}
+.i{
+    cursor: zoom-in; 
+}
+.j{
+    cursor: cell;
+}
+
+</style>
+<body>
+    <table>
+        <tr class="a">
+            <td>
+                Line-1
+            </td>
+        </tr>
+        <tr class="b">
+            <td>
+                Line-2
+            </td>
+        </tr>
+        <tr class="c">
+            <td>
+                Line-3 
+            </td>
+        </tr>
+        <tr class="d">
+            <td>
+                Line-4 
+            </td>
+        </tr>
+        <tr class="e">
+            <td>
+                Line-5
+            </td>
+        </tr>
+        <tr class="f">
+            <td>
+                Line-6
+            </td>
+        </tr>
+        <tr class="g">
+            <td>
+                Line-7 
+            </td>
+        </tr>
+        <tr class="h">
+            <td>
+                Line-8
+            </td>
+        </tr>
+        <tr class="i">
+            <td>
+                Line-9 
+            </td>
+        </tr>
+        <tr class="j">
+            <td>
+                Line-10 
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+____________________________________________________
+5)Box model.....
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.mar{
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+    margin-right: 50px;
+}
+.bor{
+    width: 50%;
+  border: 1px solid black;
+}
+.pad{
+    width: 50%;
+   padding-top: 50px;
+   padding-left: 100px;
+   padding-bottom: 10px;
+   padding-right: 20px;
+}
+</style>
+<body>
+    <div class="mar">MARGIN</div>
+    <div class="bor">BORDER</div>
+    <div class="pad">PADDING</div>
+</body>
+</html>
+__________________________________________________
+6) CSS Class to change size of font.......
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     span{
+         color: darkblue;
+         font-size:medium;
+     }
+     span:hover{
+         color: rgb(240, 41, 41);
+         font-size: x-large;
+     }
+</style>
+<body>
+    <p>Most people invest in the usual assets: <span>real estate, gold, mutual funds, fixed deposits and stock markets.</span> 
+        It's always the same four or five instruments. All they end up making is a measly 8 to 12 per cent per annum.</p>
+</body>
+</html>
+_______________________________________________
+7)2D rule translate property.....
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        width: 300px;
+        height: 200px;
+        background-color: red;
+        transform: translate(50px,100px);
+    }
+</style>
+<body>
+    <div></div>
+</body>
+</html>
+________________________________________________
+8)Tooltip......
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .option{
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px solid rgb(0, 0, 0);
+    }
+    .option .tooltip{
+        visibility: hidden;
+        width: 100px;
+        background-color: black;
+        color: rgb(253, 253, 253);
+        text-align: center;
+        border-radius: 10px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 2;
+        top: -5px;
+        left: 110%;
+    }
+    .option:hover .tooltip{
+        visibility: visible;
+    }
+</style>
+<body style="text-align: center;">
+    <div class="option">telugu 
+        <span class="tooltip">its a language</span>
+    </div>
+</body>
+</html>
+_______________________________________________
+9)For the below shown image apply clip property with values of right & bottom and display the output.
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            img {
+              position: absolute;
+              clip: rect(0px,160px,200px,0px);
+              width:140px
+            }
+            </style>
+            </head>
+            <body>
+            
+            <img src="https://free.aicte-india.org/free_product_page_assets/img/GUVI_logo.png" width="100" height="140">
+            
+            </body>
+    
+    </html>
+_______________________________________________
+10)Below img using HTML & CSS....
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            span {
+              float: left;
+              width: 0.7em;
+              font-size: 400%;
+              font-family: algerian, courier;
+              line-height: 80%;
+            }
+            p{
+                position: relative; 
+                width:210px;
+                height:110px;
+                padding:2;
+                background-color:lightseagreen
+    
+            }
+            </style>
+            </head>
+            <body>
+            
+            <p>
+                <br>
+            <span>D</span>rop caps can be used to<br>
+            add emphasis to blocks <br>of text but know they<br>
+            can effect readability.
+            
+            </p>
+            
+            
+            </body>
+            </html>
+            
+    </html>
+_______________________________________________
+11)Required property to reshape a div : <br> 
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style> 
+            .reshaped {
+                width:220px;
+                height:30px;
+              padding: 10px;
+              background-color: skyblue;
+              border-top-left-radius: 25px;
+              border-bottom-right-radius: 25px;
+            }
+            .shape{
+                width:220px;
+                height:30px;
+                padding: 10px;
+                background-color: green;
+                text-align: center;
+                font-size: 15px;
+            }
+        </style>
+            </head>
+            <body>
+            <div class=reshaped>
+              <p> </p>
+            </div>
+            <br><br><br>
+            <div class=shape><b>Half round rectangle</b><br>Photoshop custom shape</div>
+            
+    </body>
+    </html>
+
+
+
+________________________________________________
+12)Background image should not repeat....
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        
+    <style>
+        body { 
+          background-image: url('https://static4.depositphotos.com/1015060/482/i/600/depositphotos_4824453-stock-photo-green-park.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-position: center; 
+        }
+        </style>
+        </head>
+        <body>
+            <a href="https://static4.depositphotos.com/1015060/482/i/600/depositphotos_4824453-stock-photo-green-park.jpg"></a>
+        
+      
+        
+        </body>
+</html>
+   
+________________________________________
+
+13) Write CSS rules to set the direction of the flexible items inside the <div></div> Element in reverse order.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style> 
+        .Flexbox {
+          width: 200px;
+          height: 400px;
+          display: flex;
+          flex-direction: row-reverse;
+        }
+        div {
+          width: 70px;
+          height: 50px;
+        }
+        </style>
+        </head>
+        <body>
+        <div class="Flexbox">
+          <div >A</div>
+          <div >B</div>
+          <div >C</div>
+          <div >D</div>
+          <div>E</div>
+          <div>F</div>
+        </div>
+</body>
+</html>
+
+
+________________________________________
+
+14) <div> element an image border using the image "border.png". Slice the image at 30px and stretch it.
+    
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+  <style>
+        
+        #border {
+          border: 10px solid black;
+          padding: 15px;
+          border-image: url(https://webstockreview.net/images/irish-clipart-braided-rope-11.png) ;
+          border-image-slice:10%;
+        }
+        </style>
+        </head>
+        <body>
+        <p id="border">border-image-slice: 30%;</p>
+        <img src="https://webstockreview.net/images/irish-clipart-braided-rope-11.png" width="400"height="500">
+        
+  </body>
+  </html>
+
+  ________________________________________
+
+
+15)Give the <div> element a rounded corner (25px radius) on the bottom left side.
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style> 
+            .Borders {
+              border: 2px solid red;
+              padding: 10px;
+              border-bottom-left-radius: 25px;
+            }
+        </style>
+            </head>
+            <body>
+            <div class=Borders>
+              <p>Element with rounded corner (25px radius) on the bottom left side.</p>
+            </div>
+            
+    </body>
+    </html>
+
+________________________________________
+16)Transparency and opacity......
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    img {
+      width: 400px;
+      height: 200px;
+      opacity: 0.2;
+    }
+    img:hover {
+      opacity: 2.0;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <img src="https://www.insidesport.co/wp-content/uploads/2020/08/retirement.jpg" width="150" height="113">
+    
+    </body>
+</html>
+
+________________________________________
+
+17)Position the <div> element all the way to the right using absolute positioning.<!DOCTYPE html>
+
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+  <style>
+      
+      div.absolutepos {
+        position: absolute;
+        top: 0px;
+        right: 0;
+        width: 200px;
+        height: 100px;
+        border: 3px solid black;
+      }
+      </style>
+      </head>
+      <body>
+      
+        <div class="absolutepos">This div element has position: absolute;</div>
+      </div>
+      
+      </body>
+________________________________________
+
+18)Add a scrollbar to the <div> element...
+    
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <style>
+          .Texts {
+            background-color: silver;
+            width: 210px;
+            height: 100px;
+            overflow: scroll;
+          }
+          </style>
+          </head>
+          <body>
+  <div class="Texts">The overflow property specifies what should happen if content overflows an element's box.This property specifies whether to clip content or to add scrollbars when an element's content is too big to fit in a specified area.</div>
+  
+  <body>
+      
+  </body>
+  </html>
+  ________________________________________
+  
+19) Set a linear gradient background for the <div> element, going from the top to bottom, transitioning from "white" to "red" to "blue" to "green".
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+          background-image: linear-gradient(white, red, blue, green);
+        }
+        </style>
+        </head>
+        <body>
+        
+        <div style="height:400px"></div>
+        
+        </body>
+</html>
+
+ 
+
+________________________________________
+20) With the transform property, rotate the <div> element 45 degrees.
+  
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            
+            
+            #tag1 {
+              padding: 50px;
+              position: absolute;
+              border: 1px solid black;
+              background-color: red;
+              -ms-transform: rotate(45deg); /* IE 9 */
+              -ms-transform-origin: 20% 40%; /* IE 9 */
+              transform: rotate(45deg);
+              transform-origin: 20% 40%;
+            }
+            </style>
+            </head>
+            <body>
+    
+                  <div id="tag1">Guvi</div>
+    </body>
+    </html>
+  
